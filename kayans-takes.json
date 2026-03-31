@@ -1,0 +1,352 @@
+[
+  {
+    "lesson": 1,
+    "type": "hot-take",
+    "title": "AI Isn't a Tool, It's an Employee",
+    "content": "I don't use AI tools. I hire AI employees. Every agent in my system has a job description, a skill bundle, a queue, and accountability. When you start treating the AI as a coworker instead of a search bar, that's when everything changes.",
+    "source": "Mudita Agent System Spec, Mar 7 2026 — 'We are building employees, not a brain'"
+  },
+  {
+    "lesson": 2,
+    "type": "wisdom",
+    "title": "Start With the Output, Not the Prompt",
+    "content": "Before I write a single prompt, I define exactly what the output package looks like. Folder structure, file names, format, quality bar. If you can't describe the deliverable, you can't prompt for it. The prompt is just the bridge between what you have and what you need.",
+    "source": "Agent window briefs — every brief starts with 'OUTPUTS EXPECTED' section"
+  },
+  {
+    "lesson": 3,
+    "type": "contrarian",
+    "title": "Don't Ask Permission, Ship the Whole Thing",
+    "content": "Our agents build COMPLETE packages with no mid-process approvals. I don't want Claude asking me 'should I continue?' every five minutes. Give it the full spec, let it cook, review the whole thing at the end. Interrupting AI mid-flow is like pulling a cake out of the oven every two minutes to check if it's done.",
+    "source": "Agent System Spec — 'Full spec -> review -> iterate. Agents build COMPLETE packages, no mid-process approvals'"
+  },
+  {
+    "lesson": 5,
+    "type": "story",
+    "title": "Ralph Wiggum Loops Changed How I Build",
+    "content": "I use what I call 'Ralph Wiggum loops' — agentic coding loops where PRD features are executed sequentially by Claude Code. You feed it a prd.json with user stories, acceptance criteria, and dependencies. It picks up the next story, implements it, commits, and loops. I built entire products this way over a weekend.",
+    "source": "ralph.sh script + memory file on Kayan's working style"
+  },
+  {
+    "lesson": 7,
+    "type": "hot-take",
+    "title": "Run Every Skill Every Time",
+    "content": "When a new company enters our pipeline, all 67 skills fire in sequence. No selective activation. No 'this company only needs SEO.' The full battery runs, producing a complete package. The differentiation happens in the iteration, not the generation. Most people under-prompt because they pre-filter. Don't.",
+    "source": "Agent System Spec — Mega-Chain philosophy, Section 3.1"
+  },
+  {
+    "lesson": 9,
+    "type": "wisdom",
+    "title": "Done Criteria or It Didn't Happen",
+    "content": "Every single task I give an AI agent has explicit done criteria. Not vibes — specific, verifiable conditions. 'Gerald should be able to present this deck without editing it.' 'ICP profiles detailed enough to write ad copy from.' If you can't write the acceptance test, you don't understand the task well enough to prompt it.",
+    "source": "Window briefs — every brief contains 'Done Criteria' with checkboxes"
+  },
+  {
+    "lesson": 11,
+    "type": "hot-take",
+    "title": "Context Is King and Context Lock-In Is the Real Moat",
+    "content": "Context is king in AI, and transferring context between systems is still extremely difficult. Your Claude knows the most about you compared to any other LLM because you're years into using it. That creates lock-in. I think about every product the same way — when we become the aggregator of context, we survive.",
+    "source": "Kayan's MOAT Framework email, Mar 2 2026"
+  },
+  {
+    "lesson": 12,
+    "type": "wisdom",
+    "title": "Feed It the Meeting, Not a Summary",
+    "content": "I feed full Fathom meeting transcripts directly into Claude Code as context. Not my summary of the meeting — the actual transcript. The AI catches things I missed. It picks up on commitments I made and forgot about. My system processes meetings at three levels: action items, strategic signals, and relationship intelligence. Most people are only doing level one.",
+    "source": "Agent System Spec — Fathom Strategic Intelligence Layer + memory file on Kayan's workflow"
+  },
+  {
+    "lesson": 14,
+    "type": "story",
+    "title": "My AI Chief of Staff Learns MY Patterns",
+    "content": "I built a Chief of Staff agent that doesn't use generic prioritization — it learns my actual triage patterns. If Josh messages on a Friday, that's urgent regardless of labels. If a project goes untouched for 5+ days, it's either dead or about to explode. If my calendar has 6+ meetings, I'm in survive mode. That's MY heuristic, not some default framework.",
+    "source": "Agent System Spec — CoS Heuristic Learning, Section 9"
+  },
+  {
+    "lesson": 15,
+    "type": "contrarian",
+    "title": "Memory Files Are Your Unfair Advantage",
+    "content": "I maintain persistent memory files for every project, every person, every company I work with. Not chat history — structured context documents that tell the AI who I am, what I'm building, and how I think. When I start a new Claude session, it already knows my architecture decisions, my team, and my preferences. Most people start from zero every time. That's insane.",
+    "source": "Claude project memory files — user_kayan.md, project_officialai.md, project_casesight.md"
+  },
+  {
+    "lesson": 18,
+    "type": "wisdom",
+    "title": "The Brief Template Is the Product",
+    "content": "Every agent task I create follows the exact same brief template: Agent Role, Current Task, Done Criteria, Inputs Available (in read order), Outputs Expected, Constraints, Dependencies. I spent more time perfecting this template than most people spend on their actual prompts. The template IS the product — everything else scales from it.",
+    "source": "Agent window brief template — consistent across all 9+ window briefs"
+  },
+  {
+    "lesson": 21,
+    "type": "hot-take",
+    "title": "A Commodity GTM Won't Save Commodity Software",
+    "content": "A commodity go-to-market strategy will not work in an era of commodity software. If the product can be replicated, the way you sell and distribute it is the only thing left. Everyone's out here using the same AI to write the same LinkedIn posts. The companies that win will own the narrative, the content, and the distribution channel — not just the code.",
+    "source": "Kayan's MOAT Framework email, Mar 2 2026"
+  },
+  {
+    "lesson": 22,
+    "type": "story",
+    "title": "I Wrote a Whole MOAT Framework With AI",
+    "content": "When my boss asked 'what happens when 80% of our portfolio is threatened by AI-enabled coders who can spin up competing software in a weekend?', I used Claude to synthesize every conversation we'd had over two months into a 7-pillar defensibility framework. Distribution, data, workflow embed, network effects, brand, regulation, domain methodology. Forty pages. One weekend. Became the operating document for a $25M fund.",
+    "source": "MUDITA-MOAT-FRAMEWORK.md — synthesized from 7 contributors over Jan-Mar 2026"
+  },
+  {
+    "lesson": 24,
+    "type": "wisdom",
+    "title": "Write Like This, Not Like That",
+    "content": "Every brand voice guide I build for every company includes 'write like this / not like this' examples. Not abstract adjectives like 'professional and friendly.' Actual paired sentences showing the difference. If your AI doesn't have concrete examples of what right looks like, it'll give you average. Average is death.",
+    "source": "Official AI GTM Init brief — 'Brand Voice Guide has 3-5 write like this / not like this examples'"
+  },
+  {
+    "lesson": 25,
+    "type": "story",
+    "title": "I Ghostwrite as My CEO With AI",
+    "content": "I have an SCO called 'Kayan's Voice Guide' that my executive email drafting agent uses. It captures how I actually talk — direct, no-BS, data-first. When I need to write investor updates or partner emails, the AI drafts them in my voice and I barely edit. My team can't tell the difference between emails I wrote and emails the AI wrote in my name.",
+    "source": "Agent System — executive-email-drafting SCO + kayans-voice-guide SCO"
+  },
+  {
+    "lesson": 28,
+    "type": "contrarian",
+    "title": "Don't Polish, Atomize",
+    "content": "Most people use AI to polish one piece of content. I use it to atomize. One core piece becomes 13+ derivative pieces — LinkedIn posts, tweets, newsletter sections, email snippets, ad copy variants. The content-atomizer skill takes a single article and produces an entire week of multi-platform content. Writing one thing well matters less than distributing it everywhere.",
+    "source": "Agent System Spec — content-atomizer skill producing 13+ pieces from core content"
+  },
+  {
+    "lesson": 31,
+    "type": "hot-take",
+    "title": "Shallow Test Before Deep Test Before Scale",
+    "content": "I never go straight to scale. Every concept runs through a shallow test first — cheap LinkedIn ads, $100-125/day, text-only hooks to see what resonates. Only the winners graduate to deep tests with proper creative, landing pages, and tracking. Then scale. Most founders skip straight to 'launch' and wonder why they burned their budget in a week.",
+    "source": "Window 5 & 6 briefs — Shallow -> Deep -> Scale testing framework across 5+ brands"
+  },
+  {
+    "lesson": 33,
+    "type": "wisdom",
+    "title": "Your PRD Is a JSON, Not a Google Doc",
+    "content": "I structure my product requirements as JSON with user stories, acceptance criteria, dependencies, and a 'passes' boolean. Not a pretty Google Doc that no one reads. The machine-readable format means my Ralph loop can pick stories off the stack, implement them, mark them done, and move to the next one. If your spec can't be parsed by a machine, you're leaving automation on the table.",
+    "source": "ralph.sh — PRD as prd.json with programmatic story tracking"
+  },
+  {
+    "lesson": 34,
+    "type": "story",
+    "title": "CPL Went From $155 to $13",
+    "content": "For CentSight, our cost per lead started at $155 when an agency ran our ads. When we brought it in-house and let our AI agent system handle the creative and targeting, it dropped to $46. When we tested a founders-focused campaign with AI-generated copy, it hit $13. That's a 12x improvement. The system got better because each cycle fed performance data back into the next prompt.",
+    "source": "CentSight Monday deck brief — CPL improvement tracked across agency -> in-house -> founders campaign"
+  },
+  {
+    "lesson": 36,
+    "type": "contrarian",
+    "title": "Let the Agent Fail, Review the Package",
+    "content": "People are terrified of letting AI run autonomously. I let Claude Code run with --dangerously-skip-permissions in my Ralph loops. It implements features, commits code, and moves on. If it breaks something, the next iteration fixes it. The cost of one bad commit is way lower than the cost of babysitting every keystroke. Trust the loop, review the output.",
+    "source": "ralph.sh — --dangerously-skip-permissions flag for autonomous execution"
+  },
+  {
+    "lesson": 38,
+    "type": "wisdom",
+    "title": "SCOs Beat Prompts Every Time",
+    "content": "I don't rely on one-off prompts. I build Standard Coded Operations — reusable procedure documents that define exactly how a task should be executed. Each SCO covers inputs, steps, quality bar, and edge cases. My agents reference their SCOs before every task. It's the difference between telling someone what to do once and giving them a training manual they use forever.",
+    "source": "Agent System — 46+ SCOs organized by agent role, referenced in every task execution"
+  },
+  {
+    "lesson": 41,
+    "type": "hot-take",
+    "title": "Nice-to-Have Products Will Die Regardless of Moats",
+    "content": "Before you assess any company's defensibility, answer one question: if this product disappeared tomorrow, would the customer's business be materially disrupted TODAY? Not next quarter — today. If the answer is no, your moats don't matter. You're defending a castle nobody wants to siege. I've watched companies generate great demos but fail to convert because they're selling 'should-have' not 'must-have.'",
+    "source": "MOAT Framework — Must-Have Urgency prerequisite, citing Predict.law case study"
+  },
+  {
+    "lesson": 42,
+    "type": "story",
+    "title": "We Vibe-Coded Miles in 10 Days",
+    "content": "Ben and I built Miles — an AI deal sourcing tool that scores companies from 150-180 sources against a defined rubric — in about 10 days using the Claude Agent SDK. Vibe-coded the whole thing. Meanwhile, our partner JT had built a similar tool that was more polished and production-ready. The takeaway? Speed of creation is no longer a differentiator. Both tools highlighted the real challenge: making vibe-coded apps into reliable systems of record.",
+    "source": "Fathom call Mar 19 — JT <> Studios: Miles + Predict.law"
+  },
+  {
+    "lesson": 44,
+    "type": "wisdom",
+    "title": "Lead With a Free Scan, Not a Sales Pitch",
+    "content": "When we wanted to sell AI portfolio assessments to PE firms, I didn't propose a sales deck. I proposed a free diagnostic scan — lead with value, demonstrate our ability to identify hidden value creation opportunities in their portfolio data. The scan IS the sales pitch. If your AI analysis is good enough, the engagement sells itself.",
+    "source": "Kayan's PE response, Feb 24 2026 — proposing free scan/diagnostic GTM"
+  },
+  {
+    "lesson": 46,
+    "type": "hot-take",
+    "title": "Own the Benchmark, Own the Market",
+    "content": "If we're going to be thought leaders in each market, we should be creating and owning the benchmarks. It's straightforward to build industry-specific LLM benchmarks tied to job functions. If you own the framework on which models are evaluated — 'according to the Mudita test' — that gets very interesting for credibility. You stop competing in the conversation and start anchoring it.",
+    "source": "Kayan's MOAT Framework email, Mar 2 2026 — Pillar 4: LLM Benchmarks"
+  },
+  {
+    "lesson": 48,
+    "type": "story",
+    "title": "Predict.law Was Dying Because It Was a Nice-to-Have",
+    "content": "Predict.law had $50K/month burn, 8 customers, $100K ARR, and their demos weren't converting. Enterprise sales was failing. My diagnosis? The product was a 'nice-to-have,' not a 'must-have.' Our proposed fix wasn't better sales — it was a PLG pivot with fully automated onboarding, no manual review, and aggressive price testing starting at $75/month. The moat was the proprietary data aggregation, not the UI that anyone could rebuild.",
+    "source": "Fathom call Mar 19 — Predict.law crisis and pivot strategy"
+  },
+  {
+    "lesson": 51,
+    "type": "hot-take",
+    "title": "Software Is Dead, Distribution Is the Moat",
+    "content": "Product, engineering, and technical knowledge are no longer moats in an AI world. What happens when 80% of your portfolio is threatened by AI-enabled coders who can spin up competing software in a weekend? The go-to-market engine IS the moat, not the code. The company that owns the narrative, the content, and the distribution channel is the one that wins.",
+    "source": "Kayan's MOAT Framework email, Mar 2 2026 — Pillar 1: Distribution"
+  },
+  {
+    "lesson": 53,
+    "type": "wisdom",
+    "title": "Humans Run Ads, AI Does Everything Else",
+    "content": "In my system, Doug is the only human who touches ad platforms. Everything before Doug — creative generation, copy variants, audience specs, landing pages, UTMs, test designs — is built by AI agents. Everything after Doug — performance analysis, next-cycle recommendations, reporting — is also AI. Doug's job is bid management and platform execution. That's the correct human-AI boundary for paid acquisition.",
+    "source": "Agent System Spec — 'Humans run ads, AI does everything else' + Doug Package format"
+  },
+  {
+    "lesson": 55,
+    "type": "story",
+    "title": "I Built an AI Team for $550/Month",
+    "content": "My full AI agent system — 3 VP agents, 7 associate agents, 67 skills, 46 SCOs, 13 MCP connections — runs at about $550/month. That's 10 AI employees doing the work of a small agency. Compare that to one human associate in Manila at $1,500-2,500/month doing a fraction of the output. The economics of this are insane and most people haven't internalized it yet.",
+    "source": "Agent System Spec — Cost Model, Section 11"
+  },
+  {
+    "lesson": 56,
+    "type": "hot-take",
+    "title": "Your Org Chart IS Your Agent Architecture",
+    "content": "Every role at Mudita has an AI agent counterpart. The agent team is designed to mirror the actual org chart. Each agent has a job description, skill bundle, MCP tool access, standard operating procedures, and a task queue. If you can write a job description for a human, you can build an AI agent to do 80% of that job. Start with your actual org chart, not some abstract framework.",
+    "source": "Mudita AI Team Architecture doc, Mar 7 2026"
+  },
+  {
+    "lesson": 58,
+    "type": "wisdom",
+    "title": "The Heartbeat Loop Is How Agents Stay Alive",
+    "content": "Every VP agent in my system checks in every 15 minutes — pulls from ClickUp queues, checks Slack mentions, scans Fathom for new tagged meetings, evaluates priority, executes, and reports back. It's not event-driven magic — it's a simple polling loop that runs 24/7. Most people overcomplicate agent architecture. A cron job with a brain is more powerful than a reactive system that misses triggers.",
+    "source": "Agent System Spec — Heartbeat Loop architecture, Section 5.2"
+  },
+  {
+    "lesson": 61,
+    "type": "story",
+    "title": "I'm Secretly Rebuilding the Product",
+    "content": "The original Official AI codebase — built by their CTO — is hard to work with. Both Ben and I confirmed this independently. So I'm keeping a 'front' with the Official AI team while building feature-parity independently in a separate repo. The goal is to eventually present the rebuild as the replacement. Vibe coding lets you build a whole product in parallel without anyone noticing because the speed is that fast.",
+    "source": "Project memory — Official AI perceptron-stealth repo context"
+  },
+  {
+    "lesson": 62,
+    "type": "hot-take",
+    "title": "Vibe Coding Is Real But It's Not Production",
+    "content": "I vibe-coded Miles in 10 days. JT vibe-coded his deal flow tool with Claude and Kirsten. Both tools work. But here's what nobody talks about: both tools highlighted the need for robust infrastructure — CI/CD, backups, production QA — to make vibe-coded apps into reliable systems of record. Vibe coding is the best way to validate. It is NOT the same as building production software.",
+    "source": "Fathom call Mar 19 — comparison of Miles vs JT's tool"
+  },
+  {
+    "lesson": 63,
+    "type": "wisdom",
+    "title": "Generate Clips, Not Full Videos",
+    "content": "Our architecture decision for Official AI was to never generate a full video in one shot. Instead, generate 2-3 second clips and stitch them with FFmpeg. It's more reliable, gives you more creative control, and the cost is lower. Most people try to prompt for the end state. The better approach is to prompt for composable pieces and assemble them programmatically.",
+    "source": "Official AI architecture decisions, Mar 17 call — video splicing approach"
+  },
+  {
+    "lesson": 65,
+    "type": "story",
+    "title": "CaseSight: 284 Cases Scraped With AI Pipelines",
+    "content": "For CaseSight, I built AI-powered scrapers for three different legal data sources — Lawsuit Info Center, MoreLaw, and CourtListener. The pipeline scrapes cases, extracts structured data with Gemini, generates embeddings, deduplicates, and loads everything to Supabase with pgvector and BM25 search. 284 cases across 10 states, all automated. The scraper was harder to build than the product itself, and that's exactly why the data is a moat.",
+    "source": "CaseSight project memory — data pipeline status as of Mar 21 2026"
+  },
+  {
+    "lesson": 67,
+    "type": "contrarian",
+    "title": "Hide Every Ounce of Complexity",
+    "content": "For Official AI, our rule is that all backend processing — character sheets, 3D models, video generation — is invisible to the end user. They upload a photo and get back a video. Period. The same applies to prompting: the best AI-powered product is one where the user never writes a prompt. You write the prompts. The user gets the magic.",
+    "source": "Official AI architecture decisions — 'Hide complexity from users'"
+  },
+  {
+    "lesson": 72,
+    "type": "wisdom",
+    "title": "3D Character Sheets, Not 2D Photos",
+    "content": "One of our key architecture decisions was using 3D character sheets — 360-degree views — as inputs for AI video generation, not just 2D photos. This gives models way more context about the subject and produces dramatically better consistency across clips. The quality of your input determines the quality of your output, in prompting and in everything else.",
+    "source": "Official AI architecture decisions, Mar 17 call"
+  },
+  {
+    "lesson": 75,
+    "type": "hot-take",
+    "title": "Model-Agnostic or Die",
+    "content": "We built Official AI to be model-agnostic from day one. Admin panel toggle between Sora, Kling, Seedance 2.0, LTX, whatever comes next. If you hard-code to one model, you're dead the moment a better one drops. The AI landscape changes monthly. Your architecture should let you swap models like changing a light bulb.",
+    "source": "Official AI architecture decisions, Mar 17 call — model-agnostic toggle"
+  },
+  {
+    "lesson": 78,
+    "type": "story",
+    "title": "I Process Meetings at Three Levels",
+    "content": "Every Fathom recording gets analyzed at three levels. Level 1 is action items — explicit commitments and deadlines. That's what everyone does. Level 2 is strategic signals — decisions made, concerns raised, opportunities identified. Level 3 is relationship intelligence — tone shifts, unspoken concerns, trust indicators. The stuff between the lines is more valuable than the lines themselves.",
+    "source": "Agent System Spec — Fathom Strategic Intelligence Layer, Section 8"
+  },
+  {
+    "lesson": 81,
+    "type": "hot-take",
+    "title": "Regulation Is a Weapon, Not an Obstacle",
+    "content": "Regulation is something we can use to strategically shut the door of opportunity behind us, if we're well positioned and well timed. Markets that are inherently difficult to enter, like healthcare, become even stronger moats given our network and existing relationships. Many entrepreneurs simply can't access these markets. We can. That advantage compounds the deeper we go.",
+    "source": "Kayan's MOAT Framework email, Mar 2 2026 — Pillar 2: Regulation"
+  },
+  {
+    "lesson": 83,
+    "type": "wisdom",
+    "title": "Service as a Software, Not Software as a Service",
+    "content": "We're evolving beyond SaaS. The moat is not the code but the methodology encoded in the code. Anyone can build an AI tool. Not everyone can build an AI tool that embodies 20 years of domain expertise, validated by research, and continuously refined by experts in the loop. We deliver outcomes via software. The service IS the product.",
+    "source": "Studios Monthly Mar 17 — 'service as a software' strategic pivot"
+  },
+  {
+    "lesson": 85,
+    "type": "story",
+    "title": "50 Ad Briefs Across 5 Brands in One Chain",
+    "content": "Our deep testing system produced 50 ad briefs across 5 different brands — 10 per brand — with copy, creative direction, CTA, audience targeting, budget allocation, landing page mapping, and UTM setup. All generated by the agent system. A human marketer reviewed and Doug executed in the ad platforms. That's the ratio: AI generates 95% of the work, humans handle the 5% that requires platform access and judgment.",
+    "source": "Window 5 brief — DEEP-TEST-50-AD-BRIEFS.md across Zoe, Perceptron, and 3 other brands"
+  },
+  {
+    "lesson": 87,
+    "type": "contrarian",
+    "title": "Cold Email Still Works If You're Not Lazy",
+    "content": "Official AI runs cold email via Clay and Lemlist — 45-50% open rates, 1-2% reply rates in a 9-step cadence. Most people say cold email is dead. It's not dead — your cold email is just generic. When you use AI to personalize at scale and test aggressively, cold email outperforms paid channels on CAC by a mile. The plan was to scale from 1K to 100K sends.",
+    "source": "Official AI GTM brief — current cold email performance and scaling plan"
+  },
+  {
+    "lesson": 89,
+    "type": "wisdom",
+    "title": "The Say/Do Engine Is the Real Accountability Tool",
+    "content": "I built a 'say/do engine' that extracts every commitment I make in meetings and emails — explicit and implied — then tracks whether I followed through. It cross-references Fathom transcripts against ClickUp completions, email sends, and calendar follow-ups. Before every partner meeting, I know my commitment completion rate. That's the kind of operational discipline AI enables that no amount of willpower can match.",
+    "source": "Agent System Spec — Say/Do Engine, Section 8.2"
+  },
+  {
+    "lesson": 91,
+    "type": "hot-take",
+    "title": "The SaaSpocalypse Is Here and Most People Are Asleep",
+    "content": "Anyone can replicate 80% of the software that's been built over years in just a few weeks. That's not a prediction — that's today. SaaS as it exists will face massive disruption and price pressure. The defining question for every company: what do you have that a well-funded team with AI tools cannot replicate in 90 days? If the answer is 'nothing beyond our code,' the company is in trouble.",
+    "source": "MOAT Framework Synthesis — JT's original SaaSpocalypse thesis, adopted and expanded by Kayan"
+  },
+  {
+    "lesson": 93,
+    "type": "contrarian",
+    "title": "80% of Ben's Credit, Not Mine",
+    "content": "Cyrus told me 80% of the Miles project credit goes to Ben. And he's right. I set the architecture, the vision, the prompts. Ben did the actual building. The lesson? In the AI era, the person who knows how to direct the machine and the person who actually builds are equally valuable — but be honest about where the leverage really comes from. Credit the builder.",
+    "source": "Mar 5 call with Cyrus — Ben Ledwith discussion"
+  },
+  {
+    "lesson": 95,
+    "type": "wisdom",
+    "title": "Structural Scaffolding, Not Rigid SOPs",
+    "content": "Our philosophy is 'structural scaffolding' — a jazz framework, not rigid SOPs. Process should enable creativity, not constrain it. The same applies to prompting: give AI enough structure that it knows the key, the tempo, and the chord changes. Then let it improvise within that structure. Over-constrained prompts produce robotic output. Under-constrained prompts produce chaos.",
+    "source": "Feb 27 OKRs call with Josh Linkner — philosophy discussion"
+  },
+  {
+    "lesson": 97,
+    "type": "hot-take",
+    "title": "There's No Downside in Asking",
+    "content": "When Cyrus told me to draft my equity and comp proposal, he said 'there's no downside in asking — it's an opening offer, they won't fire you.' I apply the same mindset to AI. Push the boundaries of what you ask for. Ask Claude to build you an entire agent system. Ask it to write a 40-page defensibility framework. Ask for the maximum scope. The worst case is it says it can't — and even then, it usually tries.",
+    "source": "Mar 5 call with Cyrus — compensation negotiation advice"
+  },
+  {
+    "lesson": 99,
+    "type": "story",
+    "title": "13 MCP Connections Running in Parallel",
+    "content": "My Claude Code setup is wired into 13 different platforms — Gmail, Slack, Google Drive, Calendar, Supabase, Webflow, Figma, Ramp, ClickUp, Fathom, GoDaddy, image generation, and browser automation. When I give Claude a task, it doesn't just generate text — it reads my emails, checks my calendar, pulls financial data from Ramp, updates my project management, and posts to Slack. That's not prompting. That's operating.",
+    "source": "Agent System Architecture — 13 MCP connections listed across all agents"
+  },
+  {
+    "lesson": 100,
+    "type": "contrarian",
+    "title": "I'm Building AI to Replace Myself",
+    "content": "The endgame of everything I'm building — the agent system, the SCOs, the heuristic learning, the voice guide — is that Mudita Studios can run without me in the room. The CoS agent learns my decision patterns. The executive email agent writes in my voice. The morning brief tells me only what matters. I'm not using AI to do more work. I'm using AI to make myself unnecessary. That's the real power move.",
+    "source": "Agent System Spec — entire architecture designed for CEO leverage and autonomous operation"
+  }
+]
