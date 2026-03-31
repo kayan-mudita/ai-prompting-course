@@ -453,6 +453,393 @@
             }
         }
 
+        /* Kayan's Take Callout Box */
+        .kayans-take {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(6, 182, 212, 0.08) 100%);
+            border: 1px solid rgba(59, 130, 246, 0.25);
+            border-radius: 8px;
+            padding: 24px 28px;
+            margin: 30px 0;
+            position: relative;
+        }
+
+        .kayans-take::before {
+            content: "KAYAN'S TAKE";
+            display: block;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            color: var(--accent-teal);
+            margin-bottom: 10px;
+        }
+
+        .kayans-take p {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--text-primary);
+            font-style: italic;
+        }
+
+        .kayans-take .take-source {
+            font-size: 11px;
+            color: var(--text-secondary);
+            font-style: normal;
+            margin-top: 10px;
+            opacity: 0.7;
+        }
+
+        /* Copy Button on Blockquotes */
+        .lesson-content blockquote {
+            position: relative;
+        }
+
+        .copy-btn {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 11px;
+            padding: 4px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: inherit;
+        }
+
+        .copy-btn:hover {
+            background: rgba(6, 182, 212, 0.15);
+            color: var(--accent-teal);
+            border-color: var(--accent-teal);
+        }
+
+        .copy-btn.copied {
+            background: rgba(6, 182, 212, 0.2);
+            color: var(--accent-teal);
+            border-color: var(--accent-teal);
+        }
+
+        /* Key Takeaway Card */
+        .key-takeaway {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--accent-teal);
+            border-radius: 0 8px 8px 0;
+            padding: 20px 24px;
+            margin: 30px 0;
+        }
+
+        .key-takeaway::before {
+            content: "KEY TAKEAWAY";
+            display: block;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            color: var(--accent-teal);
+            margin-bottom: 8px;
+        }
+
+        .key-takeaway p {
+            margin: 0;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        /* Lesson Completion Checkbox */
+        .lesson-complete {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 15px;
+        }
+
+        .lesson-complete input[type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 18px;
+            height: 18px;
+            border: 2px solid var(--border-color);
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.2s ease;
+        }
+
+        .lesson-complete input[type="checkbox"]:checked {
+            background: var(--accent-teal);
+            border-color: var(--accent-teal);
+        }
+
+        .lesson-complete input[type="checkbox"]:checked::after {
+            content: "✓";
+            position: absolute;
+            top: -1px;
+            left: 3px;
+            color: #0a0a0a;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .lesson-complete label {
+            font-size: 13px;
+            color: var(--text-secondary);
+            cursor: pointer;
+        }
+
+        /* Reading Time Badge */
+        .reading-time {
+            display: inline-block;
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-left: 10px;
+        }
+
+        .reading-time::before {
+            content: "·";
+            margin-right: 10px;
+        }
+
+        /* Search Modal */
+        .search-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(4px);
+            z-index: 2000;
+            justify-content: center;
+            padding-top: 15vh;
+        }
+
+        .search-overlay.active {
+            display: flex;
+        }
+
+        .search-container {
+            width: 600px;
+            max-width: 90vw;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            max-height: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .search-input-wrap {
+            display: flex;
+            align-items: center;
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border-color);
+            gap: 12px;
+        }
+
+        .search-input-wrap svg {
+            width: 20px;
+            height: 20px;
+            color: var(--text-secondary);
+            flex-shrink: 0;
+        }
+
+        .search-input {
+            flex: 1;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 16px;
+            font-family: inherit;
+            outline: none;
+        }
+
+        .search-input::placeholder {
+            color: var(--text-secondary);
+            opacity: 0.6;
+        }
+
+        .search-shortcut {
+            font-size: 11px;
+            color: var(--text-secondary);
+            background: rgba(255, 255, 255, 0.06);
+            padding: 3px 8px;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+        }
+
+        .search-results {
+            overflow-y: auto;
+            padding: 8px;
+        }
+
+        .search-result {
+            display: block;
+            padding: 12px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.15s ease;
+        }
+
+        .search-result:hover, .search-result.active {
+            background: rgba(6, 182, 212, 0.08);
+        }
+
+        .search-result-module {
+            font-size: 11px;
+            color: var(--accent-teal);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .search-result-title {
+            font-size: 14px;
+            color: var(--text-primary);
+            margin-top: 2px;
+        }
+
+        .search-result-preview {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-top: 4px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .search-empty {
+            padding: 30px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        /* Mobile Hamburger */
+        .mobile-toggle {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--accent-blue);
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 200;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+            transition: all 0.2s ease;
+        }
+
+        .mobile-toggle:hover {
+            transform: scale(1.05);
+        }
+
+        /* Search Trigger in Sidebar */
+        .search-trigger {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            margin: 0 12px 15px 12px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-secondary);
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: inherit;
+        }
+
+        .search-trigger:hover {
+            border-color: var(--accent-teal);
+            color: var(--text-primary);
+        }
+
+        /* Progress Counter in Sidebar */
+        .progress-counter {
+            padding: 12px 20px;
+            font-size: 12px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 15px;
+        }
+
+        .progress-counter .progress-fill {
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-blue), var(--accent-teal));
+            border-radius: 2px;
+            margin-top: 6px;
+            transition: width 0.3s ease;
+        }
+
+        .progress-counter .progress-track {
+            height: 3px;
+            background: var(--border-color);
+            border-radius: 2px;
+        }
+
+        /* Hero Personal Bio */
+        .hero .bio {
+            font-size: 15px;
+            color: var(--text-secondary);
+            max-width: 550px;
+            margin: 20px auto 0;
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                position: fixed;
+                width: 280px;
+                height: 100vh;
+                max-height: 100vh;
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+                z-index: 150;
+                border-right: 1px solid var(--border-color);
+                border-bottom: none;
+            }
+
+            .sidebar.open {
+                transform: translateX(0);
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+
+            .search-container {
+                width: 95vw;
+            }
+
+            .kayans-take {
+                padding: 18px 20px;
+            }
+        }
+
+        /* Completed lesson styling in sidebar */
+        .lesson-link.completed {
+            color: var(--accent-teal);
+            opacity: 0.7;
+        }
+
+        .lesson-link.completed::after {
+            content: " ✓";
+            font-size: 10px;
+        }
+
         /* Scrollbar Styling */
         .sidebar::-webkit-scrollbar {
             width: 6px;
@@ -476,11 +863,34 @@
     <!-- Progress Bar -->
     <div class="progress-bar"></div>
 
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="search-overlay">
+        <div class="search-container">
+            <div class="search-input-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                <input type="text" class="search-input" id="search-input" placeholder="Search 100 lessons..." autocomplete="off">
+                <span class="search-shortcut">ESC</span>
+            </div>
+            <div class="search-results" id="search-results"></div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">☰</button>
+
     <!-- Sidebar Navigation -->
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
         <div class="sidebar-header">
             <h1>AI Prompting Course</h1>
             <p>100 Lessons by Kayan Mishra</p>
+        </div>
+        <button class="search-trigger" id="search-trigger">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            Search lessons... <span style="margin-left:auto;opacity:0.5;font-size:11px">⌘K</span>
+        </button>
+        <div class="progress-counter" id="progress-counter">
+            <span id="progress-text">0 of 100 completed</span>
+            <div class="progress-track"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
         </div>
         <div id="sidebar-content"></div>
     </div>
@@ -493,6 +903,7 @@
                 <h1>The AI Prompting Course</h1>
                 <p class="subtitle">100 Lessons on Thinking With AI</p>
                 <p class="author">By Kayan Mishra</p>
+                <p class="bio">I run a studio that builds AI products. I use Claude more than any other tool in my life — for investor emails, ad copy, competitive analysis, hiring systems, and shipping entire apps. This is everything I've learned about how to actually think with AI.</p>
             </div>
         </section>
 
@@ -7943,19 +8354,40 @@ For each piece, include: title, pillar it belongs to, buyer journey stage, prima
             ]
         };
 
-        // Generate sidebar navigation
+        // --- COMPLETION TRACKING ---
+        function getCompleted() {
+            try { return JSON.parse(localStorage.getItem('course-completed') || '[]'); } catch { return []; }
+        }
+        function setCompleted(arr) {
+            localStorage.setItem('course-completed', JSON.stringify(arr));
+        }
+        function updateProgressCounter() {
+            const completed = getCompleted();
+            const text = document.getElementById('progress-text');
+            const fill = document.getElementById('progress-fill');
+            if (text) text.textContent = `${completed.length} of 100 completed`;
+            if (fill) fill.style.width = `${completed.length}%`;
+            // Update sidebar link styles
+            document.querySelectorAll('.lesson-link').forEach(link => {
+                const num = parseInt(link.dataset.lesson);
+                link.classList.toggle('completed', completed.includes(num));
+            });
+            // Update progress bar at top
+            if (completed.length > 0) {
+                document.querySelector('.progress-bar').style.width = `${completed.length}%`;
+            }
+        }
+
+        // --- SIDEBAR ---
         function generateSidebar() {
             const sidebar = document.getElementById('sidebar-content');
-            
             course.modules.forEach(module => {
                 const moduleDiv = document.createElement('div');
                 moduleDiv.className = 'sidebar-module';
-                
                 const titleDiv = document.createElement('div');
                 titleDiv.className = 'module-title';
                 titleDiv.textContent = `Module ${module.id}: ${module.title}`;
                 moduleDiv.appendChild(titleDiv);
-
                 module.lessons.forEach(lesson => {
                     const link = document.createElement('a');
                     link.href = `#lesson-${lesson.number}`;
@@ -7964,28 +8396,23 @@ For each piece, include: title, pillar it belongs to, buyer journey stage, prima
                     link.dataset.lesson = lesson.number;
                     moduleDiv.appendChild(link);
                 });
-                
                 sidebar.appendChild(moduleDiv);
             });
         }
 
-        // Generate table of contents
+        // --- TABLE OF CONTENTS ---
         function generateTableOfContents() {
             const tocGrid = document.getElementById('toc-grid');
-            
             course.modules.forEach(module => {
                 const card = document.createElement('div');
                 card.className = 'module-card';
-                
                 const title = document.createElement('h3');
                 title.textContent = `Module ${module.id}: ${module.title}`;
                 card.appendChild(title);
-
                 const count = document.createElement('div');
                 count.className = 'lesson-count';
                 count.textContent = `${module.lessons.length} Lessons`;
                 card.appendChild(count);
-
                 const list = document.createElement('ul');
                 module.lessons.forEach(lesson => {
                     const li = document.createElement('li');
@@ -7996,56 +8423,241 @@ For each piece, include: title, pillar it belongs to, buyer journey stage, prima
                     list.appendChild(li);
                 });
                 card.appendChild(list);
-                
                 tocGrid.appendChild(card);
             });
         }
 
-        // Track active lesson
+        // --- READING TIME + COMPLETION CHECKBOXES ---
+        function enhanceLessons() {
+            document.querySelectorAll('section.lesson').forEach(section => {
+                const num = parseInt(section.id.replace('lesson-', ''));
+                const content = section.querySelector('.lesson-content');
+                const meta = section.querySelector('.lesson-meta');
+                const footer = section.querySelector('.lesson-footer');
+                // Reading time
+                if (content && meta) {
+                    const words = content.textContent.trim().split(/\s+/).length;
+                    const mins = Math.max(2, Math.ceil(words / 220));
+                    const badge = document.createElement('span');
+                    badge.className = 'reading-time';
+                    badge.textContent = `${mins} min read`;
+                    meta.appendChild(badge);
+                }
+                // Completion checkbox
+                if (footer) {
+                    const completed = getCompleted();
+                    const wrap = document.createElement('div');
+                    wrap.className = 'lesson-complete';
+                    const cb = document.createElement('input');
+                    cb.type = 'checkbox';
+                    cb.id = `complete-${num}`;
+                    cb.checked = completed.includes(num);
+                    cb.addEventListener('change', () => {
+                        let arr = getCompleted();
+                        if (cb.checked) { if (!arr.includes(num)) arr.push(num); }
+                        else { arr = arr.filter(n => n !== num); }
+                        setCompleted(arr);
+                        updateProgressCounter();
+                    });
+                    const label = document.createElement('label');
+                    label.htmlFor = `complete-${num}`;
+                    label.textContent = 'Mark as completed';
+                    wrap.appendChild(cb);
+                    wrap.appendChild(label);
+                    footer.appendChild(wrap);
+                }
+            });
+        }
+
+        // --- COPY TO CLIPBOARD ON BLOCKQUOTES ---
+        function addCopyButtons() {
+            document.querySelectorAll('.lesson-content blockquote').forEach(bq => {
+                const btn = document.createElement('button');
+                btn.className = 'copy-btn';
+                btn.textContent = 'Copy';
+                btn.addEventListener('click', () => {
+                    navigator.clipboard.writeText(bq.textContent.trim()).then(() => {
+                        btn.textContent = 'Copied!';
+                        btn.classList.add('copied');
+                        setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 1500);
+                    });
+                });
+                bq.style.position = 'relative';
+                bq.appendChild(btn);
+            });
+        }
+
+        // --- SEARCH ---
+        function buildSearchIndex() {
+            const index = [];
+            course.modules.forEach(module => {
+                module.lessons.forEach(lesson => {
+                    const el = document.getElementById(`lesson-${lesson.number}`);
+                    const content = el ? el.querySelector('.lesson-content') : null;
+                    const text = content ? content.textContent.substring(0, 300) : '';
+                    index.push({
+                        number: lesson.number,
+                        title: lesson.title,
+                        moduleId: module.id,
+                        moduleTitle: module.title,
+                        text: text.toLowerCase(),
+                        fullTitle: `${lesson.number}. ${lesson.title}`.toLowerCase()
+                    });
+                });
+            });
+            return index;
+        }
+
+        function initSearch() {
+            const overlay = document.getElementById('search-overlay');
+            const input = document.getElementById('search-input');
+            const results = document.getElementById('search-results');
+            const searchIndex = buildSearchIndex();
+            let activeIdx = -1;
+
+            function openSearch() {
+                overlay.classList.add('active');
+                input.value = '';
+                input.focus();
+                renderResults('');
+            }
+            function closeSearch() {
+                overlay.classList.remove('active');
+                activeIdx = -1;
+            }
+            function renderResults(query) {
+                const q = query.toLowerCase().trim();
+                let matches = searchIndex;
+                if (q) {
+                    matches = searchIndex.filter(item =>
+                        item.fullTitle.includes(q) || item.text.includes(q) || item.moduleTitle.toLowerCase().includes(q)
+                    );
+                }
+                matches = matches.slice(0, 15);
+                activeIdx = -1;
+                if (matches.length === 0) {
+                    results.innerHTML = '<div class="search-empty">No lessons found</div>';
+                    return;
+                }
+                results.innerHTML = matches.map((m, i) => `
+                    <a href="#lesson-${m.number}" class="search-result" data-idx="${i}">
+                        <div class="search-result-module">Module ${m.moduleId}: ${m.moduleTitle}</div>
+                        <div class="search-result-title">${m.number}. ${m.title}</div>
+                    </a>
+                `).join('');
+                results.querySelectorAll('.search-result').forEach(r => {
+                    r.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        closeSearch();
+                        const target = document.querySelector(r.getAttribute('href'));
+                        if (target) target.scrollIntoView({ behavior: 'smooth' });
+                        // Close mobile sidebar too
+                        document.getElementById('sidebar').classList.remove('open');
+                    });
+                });
+            }
+
+            input.addEventListener('input', () => renderResults(input.value));
+            input.addEventListener('keydown', (e) => {
+                const items = results.querySelectorAll('.search-result');
+                if (e.key === 'ArrowDown') { e.preventDefault(); activeIdx = Math.min(activeIdx + 1, items.length - 1); }
+                else if (e.key === 'ArrowUp') { e.preventDefault(); activeIdx = Math.max(activeIdx - 1, 0); }
+                else if (e.key === 'Enter' && activeIdx >= 0 && items[activeIdx]) { items[activeIdx].click(); return; }
+                items.forEach((item, i) => item.classList.toggle('active', i === activeIdx));
+            });
+
+            // Open/close triggers
+            document.getElementById('search-trigger').addEventListener('click', openSearch);
+            overlay.addEventListener('click', (e) => { if (e.target === overlay) closeSearch(); });
+            document.addEventListener('keydown', (e) => {
+                if ((e.metaKey || e.ctrlKey) && e.key === 'k') { e.preventDefault(); openSearch(); }
+                if (e.key === 'Escape') closeSearch();
+            });
+        }
+
+        // --- MOBILE MENU ---
+        function initMobile() {
+            const toggle = document.getElementById('mobile-toggle');
+            const sidebar = document.getElementById('sidebar');
+            toggle.addEventListener('click', () => {
+                sidebar.classList.toggle('open');
+                toggle.textContent = sidebar.classList.contains('open') ? '✕' : '☰';
+            });
+            // Close sidebar when clicking a lesson link on mobile
+            sidebar.addEventListener('click', (e) => {
+                if (e.target.matches('.lesson-link')) {
+                    sidebar.classList.remove('open');
+                    toggle.textContent = '☰';
+                }
+            });
+        }
+
+        // --- ACTIVE LESSON TRACKING ---
         function updateActiveLesson() {
             const lessons = document.querySelectorAll('section.lesson');
             const sidebarLinks = document.querySelectorAll('.lesson-link');
-            
             window.addEventListener('scroll', () => {
                 let currentLessonNumber = 1;
-                
                 lessons.forEach(lesson => {
-                    const lessonTop = lesson.offsetTop;
-                    if (window.scrollY >= lessonTop - 200) {
+                    if (window.scrollY >= lesson.offsetTop - 200) {
                         currentLessonNumber = parseInt(lesson.id.replace('lesson-', ''));
                     }
                 });
-                
                 sidebarLinks.forEach(link => {
                     link.classList.remove('active');
                     if (parseInt(link.dataset.lesson) === currentLessonNumber) {
                         link.classList.add('active');
                     }
                 });
-                
-                // Update progress bar
-                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-                const scrolled = (window.scrollY / docHeight) * 100;
-                document.querySelector('.progress-bar').style.width = scrolled + '%';
             });
         }
 
-        // Smooth scroll behavior
+        // --- SMOOTH SCROLL ---
         document.addEventListener('click', (e) => {
             if (e.target.matches('a[href^="#lesson-"]')) {
                 e.preventDefault();
                 const target = document.querySelector(e.target.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
             }
         });
 
-        // Initialize
+        // --- KAYAN'S TAKES INJECTION ---
+        function injectTakes(takes) {
+            takes.forEach(take => {
+                const section = document.getElementById(`lesson-${take.lesson}`);
+                if (!section) return;
+                const content = section.querySelector('.lesson-content');
+                if (!content) return;
+                const div = document.createElement('div');
+                div.className = 'kayans-take';
+                div.innerHTML = `<p>${take.content}</p><div class="take-source">${take.source}</div>`;
+                // Insert before the last paragraph
+                const paragraphs = content.querySelectorAll('p');
+                if (paragraphs.length > 3) {
+                    const insertBefore = paragraphs[Math.floor(paragraphs.length * 0.6)];
+                    content.insertBefore(div, insertBefore);
+                } else {
+                    content.appendChild(div);
+                }
+            });
+        }
+
+        // --- INITIALIZE ---
         document.addEventListener('DOMContentLoaded', () => {
             generateSidebar();
             generateTableOfContents();
+            enhanceLessons();
+            addCopyButtons();
+            initSearch();
+            initMobile();
             updateActiveLesson();
+            updateProgressCounter();
+
+            // Load takes if available
+            fetch('kayans-takes.json')
+                .then(r => r.ok ? r.json() : [])
+                .then(takes => { if (takes.length) injectTakes(takes); })
+                .catch(() => {});
         });
     </script>
 </body>
