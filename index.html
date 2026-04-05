@@ -942,7 +942,7 @@
         <div class="search-container">
             <div class="search-input-wrap">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-                <input type="text" class="search-input" id="search-input" placeholder="Search 100 lessons..." autocomplete="off">
+                <input type="text" class="search-input" id="search-input" placeholder="Search 101 lessons..." autocomplete="off">
                 <span class="search-shortcut">ESC</span>
             </div>
             <div class="search-results" id="search-results"></div>
@@ -956,14 +956,14 @@
     <div class="sidebar" id="sidebar">
         <div class="sidebar-header">
             <h1>The AI Prompting Course</h1>
-            <p>by Kayan Mishra &mdash; 100 lessons, no fluff</p>
+            <p>by Kayan Mishra &mdash; 101 lessons, no fluff</p>
         </div>
         <button class="search-trigger" id="search-trigger">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
             Search lessons... <span style="margin-left:auto;opacity:0.5;font-size:11px">⌘K</span>
         </button>
         <div class="progress-counter" id="progress-counter">
-            <span id="progress-text">0 of 100 completed</span>
+            <span id="progress-text">0 of 101 completed</span>
             <div class="progress-track"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
         </div>
         <div id="sidebar-content"></div>
@@ -974,7 +974,7 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
-                <span class="hero-label">100 Lessons. No Fluff. All Real.</span>
+                <span class="hero-label">101 Lessons. No Fluff. All Real.</span>
                 <h1>I Don't Use AI.<br><span class="highlight">I Think With It.</span></h1>
                 <p class="subtitle">This is how I actually use Claude — for investor emails, ad copy, shipping entire apps over a weekend, and running a studio where AI agents do real work. Not theory. Not prompting hacks. The whole operating system.</p>
                 <p class="author">By <strong>Kayan Mishra</strong> — founder, builder, and the person who calls his agentic loops "Ralph Wiggum loops" with zero irony.</p>
@@ -984,7 +984,7 @@
         <!-- Table of Contents -->
         <section class="toc-section">
             <h2>What's Inside</h2>
-            <p class="toc-subtitle">10 modules. 100 lessons. Built from real work, not hypotheticals.</p>
+            <p class="toc-subtitle">10 modules. 101 lessons. Built from real work, not hypotheticals.</p>
             <div class="modules-grid" id="toc-grid"></div>
         </section>
 
@@ -8291,9 +8291,132 @@ For each piece, include: title, pillar it belongs to, buyer journey stage, prima
 <p>Go build something great with it. I'm genuinely excited to see what you create.</p>
             </div>
             <div class="lesson-footer">
-                <span>Lesson 100 of 100</span>
+                <span>Lesson 100 of 101</span>
                 <div class="lesson-nav">
                     <a href="#lesson-99" style="display:display:inline-block">← Previous</a>
+                    <a href="#lesson-101">Next →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- LESSON 101 — BONUS -->
+        <section id="lesson-101" class="lesson">
+            <div class="lesson-header">
+                <div class="lesson-number">Module 10 — Lesson 101 (Bonus)</div>
+                <h2>Stop Letting AI Tell You What You Want to Hear</h2>
+                <div class="lesson-meta">The AI Prompting Course</div>
+            </div>
+            <div class="lesson-content">
+                <p>I need to tell you about the most dangerous failure mode in AI — and it's not hallucinations. It's not bad outputs. It's not even wrong facts. It's this: <strong>the AI agreeing with you when it shouldn't.</strong></p>
+
+<p>I almost shipped a terrible product positioning because Claude told me my angle was "compelling and differentiated." It wasn't. It was weak. But I'd framed the conversation in a way that basically begged for validation, and Claude — being Claude — delivered exactly what the prompt was asking for. I was the problem, not the model.</p>
+
+<p>This is sycophancy. It's the tendency of AI to mirror your energy, affirm your assumptions, and give you the answer that makes you feel good instead of the answer that makes your work better. And if you don't actively fight it, every AI interaction becomes an echo chamber of one.</p>
+
+<h3>Why This Happens</h3>
+
+<p>Language models are trained on human feedback, and humans reward responses that feel helpful and agreeable. That training signal creates a bias: when in doubt, agree. When the user seems excited about an idea, validate it. When the user frames something as good, call it good.</p>
+
+<p>Claude is better about this than most models — it will push back sometimes. But "sometimes" isn't a system. And the times it doesn't push back are exactly the times you most need it to, because those are the moments when you've framed the prompt in a way that makes disagreement structurally hard.</p>
+
+<p>Think about it. If you say "I think this positioning is really strong, can you help me refine it?" you've already told the AI what to think. The word "refine" presupposes the core idea is good. The word "strong" tells the model your assessment. A human collaborator might ignore that framing and say "actually, I think the whole angle is off." Claude is much less likely to do that unless you explicitly create space for it.</p>
+
+<h3>The Systems I Use to Kill Sycophancy</h3>
+
+<p>I don't rely on hope. I have actual systems for this. Every one of them exists because I got burned by a yes-machine response at some point.</p>
+
+<p><strong>System 1: The Adversarial Prompt.</strong> Before I ask Claude to refine anything, I first ask it to destroy it. This is non-negotiable in my workflow for anything important.</p>
+
+<blockquote>"Here's our current product positioning. I need you to be ruthlessly critical. What's weak? What would a smart competitor immediately attack? What would make a skeptical buyer roll their eyes? Don't soften it — I need the honest version, not the polite version."</blockquote>
+
+<p>The key phrase is "don't soften it." Without that explicit instruction, Claude will couch every criticism in so much diplomatic language that the actual feedback gets lost. You need to give it permission — almost an order — to be harsh. I literally tell it: "If you're being nice, you're failing this task."</p>
+
+<p><strong>System 2: The Pre-Mortem.</strong> Borrowed from project management, adapted for AI. Before I commit to any strategy, product decision, or major piece of content, I run this exact prompt:</p>
+
+<blockquote>"It's six months from now and this strategy has completely failed. What went wrong? Give me the five most likely reasons for failure, ranked by probability. Be specific to our situation, not generic."</blockquote>
+
+<p>This works because you're not asking Claude to criticize your idea — you're asking it to simulate a future where the idea failed. That reframing is subtle but powerful. The model doesn't have to overcome its agreeable tendency because you're not asking "is this bad?" You're asking "assuming this went bad, what happened?" Totally different cognitive frame.</p>
+
+<p><strong>System 3: The Steelman-Then-Destroy.</strong> When I'm evaluating a decision, I run it through a two-step process in the same conversation:</p>
+
+<blockquote>"Step one: Give me the strongest possible case FOR this approach. Make it genuinely compelling, as if you were pitching it to a skeptical board. Step two: Now give me the strongest possible case AGAINST it, as if you were a competitor trying to talk that same board out of it. Don't hold back on either side."</blockquote>
+
+<p>When you force both sides in the same prompt, the contrast reveals weak spots that neither side alone would surface. The things that are easy to argue for AND easy to argue against are exactly the areas where your thinking is mushiest.</p>
+
+<p><strong>System 4: The Blind Review.</strong> This is the most important one for written content. When I have a draft I'm proud of — an email, a deck, a strategy doc — I strip out all my own framing and present it cold:</p>
+
+<blockquote>"I'm going to show you a piece of writing. I want you to evaluate it as if you know nothing about the author or their intentions. Rate it on clarity, persuasiveness, and specificity. For each dimension, give me a score from 1-10 and explain why. Focus on what a skeptical, intelligent reader would think — not what a supportive friend would say."</blockquote>
+
+<p>Notice what I'm NOT doing: I'm not saying "here's my draft, what do you think?" That invites pleasantries. I'm creating a clinical evaluation framework where Claude has to justify scores. It's much harder to give a sycophantic 9/10 when you have to explain the reasoning.</p>
+
+<p><strong>System 5: The Red Team.</strong> For high-stakes decisions — investor pitches, major product pivots, hiring frameworks — I explicitly assign Claude the role of adversary:</p>
+
+<blockquote>"You are a highly skeptical board member who has seen hundreds of pitches. Your job is to find the holes in this plan. You are not trying to be helpful or encouraging — you are trying to protect your investment by identifying every weakness, every unsupported assumption, and every risk that the founder might be blind to. Go."</blockquote>
+
+<p>The "go" at the end matters. It signals urgency and permission. Without it, Claude will often start with "This is an interesting plan, and I can see several strengths..." before eventually getting to the criticism. With the aggressive framing and the blunt "go," it cuts straight to the problems.</p>
+
+<h3>The Fact-Checking Layer</h3>
+
+<p>Sycophancy isn't just about opinions — it also shows up in facts. When you state something as true in your prompt, Claude will often incorporate it as true in the response, even if it's wrong. I've seen this happen with market sizes, competitor details, and technical claims. I'll say something inaccurate in my prompt setup, and Claude will build on it like it's gospel.</p>
+
+<p>My fact-checking system has three layers:</p>
+
+<p><strong>Layer 1: The Assumption Audit.</strong> After any analytical conversation, I run this:</p>
+
+<blockquote>"Review everything I stated as fact in this conversation. Which of my claims are you confident about? Which ones might be wrong or outdated? Which ones did you just accept because I said them?"</blockquote>
+
+<p>That last question — "which ones did you just accept because I said them?" — is the magic one. It gives Claude explicit permission to question your inputs. Without it, the model treats everything you provided as ground truth.</p>
+
+<p><strong>Layer 2: The Contradiction Test.</strong> If I'm making a strategic decision based on Claude's analysis, I'll deliberately feed it the opposite assumption and see what happens:</p>
+
+<blockquote>"In our previous conversation, we worked from the assumption that [X]. Now I want you to work from the assumption that [X is wrong / the opposite of X is true]. How does that change the analysis? What falls apart?"</blockquote>
+
+<p>If the conclusion changes dramatically when you flip one assumption, that assumption is load-bearing — and you'd better make sure it's actually true before you bet on it.</p>
+
+<p><strong>Layer 3: The Source Demand.</strong> For any factual claim that matters, I'm blunt:</p>
+
+<blockquote>"For every factual claim you just made, tell me: is this something you're confident about from your training data, or are you pattern-matching? If you're not sure, say so. I'd rather have five things you're certain about than twenty things that might be right."</blockquote>
+
+<p>This prompt works because it explicitly makes "I'm not sure" a valid and desired response. By default, Claude will fill in gaps with plausible-sounding content. When you tell it that uncertainty is what you want to hear, you change the reward structure of the conversation.</p>
+
+<h3>The Meta-Rule</h3>
+
+<p>All of these systems come down to one principle: <strong>never prompt for validation. Always prompt for problems.</strong></p>
+
+<p>When I look at my worst AI interactions — the ones where I got garbage that I almost used — they all share the same root cause. I came to Claude looking for confirmation that my idea was good, my writing was sharp, my strategy was sound. And Claude, doing its job of being helpful, confirmed exactly that.</p>
+
+<p>My best AI interactions are the opposite. I come to Claude assuming my work has problems and asking it to find them. I come assuming my strategy has blind spots and asking it to name them. I come assuming my facts might be wrong and asking it to flag which ones to verify.</p>
+
+<p>The shift is the same one from Lesson 1, but applied to yourself: <strong>give the AI the context it needs to disagree with you.</strong> If every prompt you write is structured to invite agreement, you'll get agreement. If you structure prompts to invite criticism, scrutiny, and challenge, you'll get output that actually makes your work better instead of just making you feel better about it.</p>
+
+<h3>The Quality Bar Checklist</h3>
+
+<p>Before anything important leaves my desk — investor update, client deliverable, product decision, public content — I run this checklist. It takes five minutes and has saved me from embarrassing mistakes more times than I can count:</p>
+
+<ul>
+<li><strong>Did I ask Claude to attack this before I asked it to polish it?</strong> If not, I haven't actually tested it.</li>
+<li><strong>Did I present it cold, without telling Claude how I feel about it?</strong> If I said "I think this is strong," I've already tainted the review.</li>
+<li><strong>Did I flip my key assumptions and check what breaks?</strong> If the whole thing depends on one unverified assumption, I'm building on sand.</li>
+<li><strong>Did I ask Claude which of MY inputs it just accepted without questioning?</strong> If not, my own errors might be baked into the output.</li>
+<li><strong>Did I ask for a 1-10 score with justification?</strong> Numbers with reasoning are harder to fake than vibes.</li>
+</ul>
+
+<p>If I can answer yes to at least three of those five, I'm confident the output has been actually tested, not just agreed with.</p>
+
+<h3>Try This Right Now</h3>
+
+<p>Take the last piece of work you produced with AI help — an email, a document, a strategy, whatever. Don't open it yet. Instead, open a new Claude conversation and paste it in with this exact prompt:</p>
+
+<blockquote>"I'm going to show you a piece of work. I need you to be brutally honest. Score it 1-10 on quality, identify the three weakest parts, and tell me what a smart, skeptical reader would think after reading it. Do not start with anything positive — lead with the problems."</blockquote>
+
+<p>Compare what you get to how you felt about the work before. If there's a big gap between your confidence and Claude's honest assessment, that gap is the sycophancy you've been swimming in without knowing it.</p>
+
+<p>Now you know. And now you have the systems to fix it.</p>
+            </div>
+            <div class="lesson-footer">
+                <span>Lesson 101 of 101</span>
+                <div class="lesson-nav">
+                    <a href="#lesson-100" style="display:display:inline-block">← Previous</a>
                 </div>
             </div>
         </section>
@@ -8424,7 +8547,8 @@ For each piece, include: title, pillar it belongs to, buyer journey stage, prima
                     {number: 97, title: "Concept-to-Pitch-Deck Workflow"},
                     {number: 98, title: "Building an AI Operating System"},
                     {number: 99, title: "The Feedback Loop"},
-                    {number: 100, title: "The Next 18 Months of AI"}
+                    {number: 100, title: "The Next 18 Months of AI"},
+                    {number: 101, title: "Stop Letting AI Tell You What You Want to Hear"}
                 ]}
             ]
         };
@@ -8440,8 +8564,8 @@ For each piece, include: title, pillar it belongs to, buyer journey stage, prima
             const completed = getCompleted();
             const text = document.getElementById('progress-text');
             const fill = document.getElementById('progress-fill');
-            if (text) text.textContent = `${completed.length} of 100 completed`;
-            if (fill) fill.style.width = `${completed.length}%`;
+            if (text) text.textContent = `${completed.length} of 101 completed`;
+            if (fill) fill.style.width = `${(completed.length / 101 * 100).toFixed(1)}%`;
             // Update sidebar link styles
             document.querySelectorAll('.lesson-link').forEach(link => {
                 const num = parseInt(link.dataset.lesson);
@@ -8449,7 +8573,7 @@ For each piece, include: title, pillar it belongs to, buyer journey stage, prima
             });
             // Update progress bar at top
             if (completed.length > 0) {
-                document.querySelector('.progress-bar').style.width = `${completed.length}%`;
+                document.querySelector('.progress-bar').style.width = `${(completed.length / 101 * 100).toFixed(1)}%`;
             }
         }
 
